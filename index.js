@@ -14,9 +14,6 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-app.get('/',(req,res)=>{
-  res.send('Backend of memories project');
-})
 
 const CONNECTION_URL='mongodb+srv://vamsi:vamsi1234@cluster0.pkib0qn.mongodb.net/?retryWrites=true&w=majority'
 const PORT = process.env.PORT|| 5000;
